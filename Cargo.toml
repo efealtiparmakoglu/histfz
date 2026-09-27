@@ -1,0 +1,20 @@
+[package]
+name = "histfz"
+version = "1.0.0"
+edition = "2021"
+description = "Fuzzy shell history search with Smith-Waterman scoring, live filtering and clipboard copy. Zero dependencies."
+license = "MIT"
+readme = "README.md"
+keywords = ["history", "fuzzy", "smith-waterman", "shell", "cli"]
+categories = ["command-line-utilities", "command-line-interface"]
+
+[lib]
+name = "histfz"
+path = "src/lib.rs"
+
+[[bin]]
+name = "histfz"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
